@@ -4,38 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tray Branch Sr - Personal Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Tray Branch Sr</h1>
-        <p>Computer Science Student</p>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Tray Branch Sr</h1>
+            <p class="hero-subtitle">Computer Science student building practical software, AI tools, and web applications.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section id="about">
+        <section id="about" class="card">
             <h2>About Me</h2>
-            <p>Welcome to my personal profile page. I am a Computer Science student passionate about learning new technologies, solving challenging problems, and building software that makes a difference.</p>
+            <p>I'm a Computer Science student focused on building practical software solutions across web development, AI, and cybersecurity. I enjoy solving technical problems, learning modern technologies, and turning ideas into useful applications.</p>
         </section>
 
-        <section id="interests">
+        <section id="interests" class="card">
             <h2>Interests</h2>
-            <ul>
+            <ul class="pills">
                 <li>Software Development</li>
                 <li>Web Technologies</li>
-                <li>Artificial Intelligence and Machine Learning</li>
+                <li>AI / Machine Learning</li>
                 <li>Cybersecurity</li>
-                <li>Open Source Contribution</li>
+                <li>Open Source</li>
             </ul>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out through any of the following:</p>
-            <ul>
-                <li>Email: <a href="mailto:tray.d.branch@gmail.com">tray.d.branch@gmail.com</a></li>
-                <li>GitHub: <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
-            </ul>
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <article class="project">
+                    <h3>Project One</h3>
+                    <p>One-sentence description of what this project does and the problem it solves.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="#" class="project-link">View on GitHub &rarr;</a>
+                </article>
+
+                <article class="project">
+                    <h3>Project Two</h3>
+                    <p>One-sentence description of what this project does and the problem it solves.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                    </div>
+                    <a href="#" class="project-link">View on GitHub &rarr;</a>
+                </article>
+
+                <article class="project">
+                    <h3>Project Three</h3>
+                    <p>One-sentence description of what this project does and the problem it solves.</p>
+                    <div class="project-tech">
+                        <span>Security</span>
+                        <span>Linux</span>
+                    </div>
+                    <a href="#" class="project-link">View on GitHub &rarr;</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="card cta">
+            <h2>Let's Connect</h2>
+            <p>Interested in collaborating or reviewing my work? I'd love to hear from you.</p>
+            <div class="cta-buttons">
+                <a href="mailto:tray.d.branch@gmail.com" class="btn btn-primary">Email Me</a>
+                <a href="https://github.com/Auth3nticAI" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View My GitHub</a>
+            </div>
         </section>
     </main>
 
